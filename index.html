@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konectd Marketing – AI Growth Platform</title>
+  <meta name="description" content="AI-powered marketing that captures leads, grows reputation, dominates local search — plus full agency services: websites, SEO, digital ads and more."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bgdark: '#0A192F',
+            primary:   '#00BFFF',
+            secondary: '#A337FF',
+            success:   '#00FF87',
+            neutral:   '#F5F5F5',
+            muted:     '#94A3B8',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+    }
+    .hero-bg {
+      background-image: url('https://thumbs.dreamstime.com/b/futuristic-abstract-background-neon-blue-purple-glowing-lines-dots-dark-3d-render-illustration-321681036.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      mix-blend-mode: screen;
+    }
+    .hero-glow {
+      text-shadow: 0 0 40px rgba(0, 191, 255, 0.4), 0 0 80px rgba(163, 55, 255, 0.2);
+    }
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .icon-hover:hover {
+      color: #00BFFF;
+    }
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(0, 191, 255, 0.2), transparent);
+      margin: 6rem auto;
+      max-width: 80%;
+    }
+    @media (max-width: 768px) {
+      .section-padding {
+        padding-top: 8rem !important;
+        padding-bottom: 8rem !important;
+      }
+      .section-divider {
+        margin: 4rem auto;
+      }
+    }
+  </style>
+</head>
+<body class="bg-bgdark text-neutral antialiased" onload="lucide.createIcons()">
+
+  <!-- Header – Logo only in top left -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass">
+    <div class="container mx-auto px-8 py-6 flex justify-start items-center">
+      <div class="flex items-center gap-2">
+        <span class="text-3xl font-heading font-bold text-white tracking-tight">KS</span>
+        <span class="text-xl font-heading font-medium text-white">Marketing</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-48 pb-40 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-bgdark opacity-90 pointer-events-none"></div>
+    <div class="absolute inset-0 hero-bg opacity-30 pointer-events-none"></div>
+    <div class="container mx-auto px-8 max-w-6xl relative z-10">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-extrabold text-white leading-tight mb-10 hero-glow">
+        Grow Your Business Without the Burnout
+      </h1>
+      <p class="text-xl sm:text-2xl md:text-3xl text-muted max-w-4xl mx-auto mb-14 font-light">
+        AI that answers calls 24/7, books jobs, grows your reviews, ranks you higher locally, and brings customers back — with CRM inbox and reporting in one platform.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center mt-10">
+        <a href="https://konectd-company-llc.smblogin.com/public/store/2ZRC/default"
+           class="bg-success text-bgdark px-12 py-6 rounded-xl font-bold text-xl hover:bg-success/90 transition shadow-xl shadow-success/30">
+          Start Today
+        </a>
+        <a href="#why" class="border border-neutral/40 text-neutral px-12 py-6 rounded-xl font-medium hover:bg-white/5 transition text-xl">
+          See why businesses choose it →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Why Businesses Need This -->
+  <section id="why" class="section-padding container mx-auto px-8 bg-black/20">
+    <h2 class="text-4xl md:text-5xl font-heading font-semibold text-center mb-16 text-white">
+      Why Most Small Businesses Are Losing Revenue Every Month
+    </h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="glass p-8 rounded-2xl text-center">
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-white">Missed calls = missed jobs</h3>
+        <p class="text-muted mb-4">
+          After-hours calls go unanswered. Lose revenue per year.
+        </p>
+        <p class="text-success font-medium">Konectd answers <strong>99%</strong> → <strong>65% more bookings</strong>.</p>
+      </div>
+      <div class="glass p-8 rounded-2xl text-center">
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-white">Reviews take too much time</h3>
+        <p class="text-muted mb-4">
+          Slow responses hurt trust and rankings.
+        </p>
+        <p class="text-success font-medium">AI replies instantly → <strong>25%</strong> higher conversions per 0.1-star increase.</p>
+      </div>
+      <div class="glass p-8 rounded-2xl text-center">
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-white">Hard to show up in local search</h3>
+        <p class="text-muted mb-4">
+          Inconsistent listings let competitors win "near me" searches.
+        </p>
+        <p class="text-success font-medium">Konectd syncs + builds citations → <strong>80–136%</strong> visibility boost.</p>
+      </div>
+      <div class="glass p-8 rounded-2xl text-center">
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-white">No time to follow up with past customers</h3>
+        <p class="text-muted mb-4">
+          Repeat business slips away without reminders or offers.
+        </p>
+        <p class="text-success font-medium">Automated campaigns deliver high ROI.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Why It's a Great Fit for Small Businesses -->
+  <section id="fit" class="section-padding container mx-auto px-8 bg-black/30">
+    <h2 class="text-4xl md:text-5xl font-heading font-semibold text-center mb-16 text-white">
+      Built Specifically for Small Businesses
+    </h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="dollar-sign" class="w-12 h-12 mx-auto mb-6 text-success icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Affordable & Predictable</h3>
+        <p class="text-muted text-lg">
+          One flat price. No hidden fees, no long contracts. Many recover the full cost with just 1–2 extra jobs per month.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="clock" class="w-12 h-12 mx-auto mb-6 text-success icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Saves You Time — Not Adds Work</h3>
+        <p class="text-muted text-lg">
+          No daily posting, no manual follow-ups, no chasing reviews. Owners typically reclaim <strong>10–20 hours/week</strong> while seeing better results.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="shield-check" class="w-12 h-12 mx-auto mb-6 text-success icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">No Tech Skills Needed</h3>
+        <p class="text-muted text-lg">
+          Simple dashboard, guided setup, industry-ready templates. Works for plumbers, salons, auto shops, pet groomers — no coding or marketing degree required.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="trending-up" class="w-12 h-12 mx-auto mb-6 text-success icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Scales with You</h3>
+        <p class="text-muted text-lg">
+          Start simple, add locations or users later. Grows with your business without forcing you into expensive enterprise plans or complexity.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="zap" class="w-12 h-12 mx-auto mb-6 text-success icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Fast, Real ROI</h3>
+        <p class="text-muted text-lg">
+          Most see cost recovery in <strong>1–3 months</strong>. Average high first-year ROI from captured leads, higher ratings, and repeat customers.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="headphones" class="w-12 h-12 mx-auto mb-6 text-success icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Support That Understands Small Business</h3>
+        <p class="text-muted text-lg">
+          Real people (not endless bots) help with setup, questions, and optimization. We know what it's like running a small operation — we're here to make your life easier.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Unified Platform Highlight -->
+  <section class="section-padding container mx-auto px-8 bg-black/20 text-center">
+    <h2 class="text-4xl md:text-5xl font-heading font-semibold mb-12 text-white">
+      One Login. Everything You Need.
+    </h2>
+    <p class="text-xl text-muted max-w-4xl mx-auto mb-16">
+      Log into a single business platform to access:
+    </p>
+    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="glass p-10 rounded-2xl">
+        <i data-lucide="inbox" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-primary">Unified CRM Inbox</h3>
+        <p class="text-muted text-lg">
+          All leads, messages, emails, SMS, chats, social DMs in one place. Tag, assign, track history — never lose context.
+        </p>
+      </div>
+      <div class="glass p-10 rounded-2xl">
+        <i data-lucide="bar-chart-2" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-primary">Online Presence Reporting</h3>
+        <p class="text-muted text-lg">
+          Real-time dashboards: review scores, local rankings, lead sources, performance trends. See exactly what's working.
+        </p>
+      </div>
+      <div class="glass p-10 rounded-2xl">
+        <i data-lucide="layout-dashboard" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-primary">One Business Platform</h3>
+        <p class="text-muted text-lg">
+          Everything — AI tools, CRM, inbox, analytics — in a single, easy-to-use login. No switching apps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Core Modules -->
+  <section id="how" class="section-padding container mx-auto px-8">
+    <h2 class="text-4xl md:text-5xl font-heading font-semibold text-center mb-16 text-white">
+      Core Intelligence Features
+    </h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="glass p-10 rounded-2xl fade-in-section">
+        <i data-lucide="phone" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-primary">24/7 AI Receptionist</h3>
+        <p class="text-muted mb-6">
+          Answers calls, chats, texts, social messages — books jobs instantly.
+        </p>
+        <ul class="space-y-3 text-sm text-muted/90">
+          <li>• Qualifies leads automatically</li>
+          <li>• Adds to your calendar</li>
+          <li>• Follows up if missed</li>
+        </ul>
+      </div>
+
+      <div class="glass p-10 rounded-2xl fade-in-section">
+        <i data-lucide="star" class="w-10 h-10 mx-auto mb-6 text-secondary"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-secondary">Reputation Manager</h3>
+        <p class="text-muted mb-6">
+          Watches reviews across platforms and responds intelligently.
+        </p>
+        <ul class="space-y-3 text-sm text-muted/90">
+          <li>• Auto-replies professionally</li>
+          <li>• Requests reviews at perfect moments</li>
+          <li>• Protects & grows your rating</li>
+        </ul>
+      </div>
+
+      <div class="glass p-10 rounded-2xl fade-in-section">
+        <i data-lucide="map-pin" class="w-10 h-10 mx-auto mb-6 text-success"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-success">Local SEO Power</h3>
+        <p class="text-muted mb-6">
+          Keeps listings perfect and builds citations on high-authority sites.
+        </p>
+        <ul class="space-y-3 text-sm text-muted/90">
+          <li>• Real-time sync everywhere</li>
+          <li>• Boosts "near me" rankings</li>
+          <li>• More calls & foot traffic</li>
+        </ul>
+      </div>
+
+      <div class="glass p-10 rounded-2xl fade-in-section">
+        <i data-lucide="share-2" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-primary">Social & Content Automation</h3>
+        <p class="text-muted mb-6">
+          One dashboard to post and engage across all platforms.
+        </p>
+        <ul class="space-y-3 text-sm text-muted/90">
+          <li>• AI writes posts from prompts</li>
+          <li>• Schedules automatically</li>
+          <li>• Handles comments & DMs</li>
+        </ul>
+      </div>
+
+      <div class="glass p-10 rounded-2xl fade-in-section">
+        <i data-lucide="repeat" class="w-10 h-10 mx-auto mb-6 text-secondary"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-secondary">Customer Re-engagement</h3>
+        <p class="text-muted mb-6">
+          Sends smart reminders, offers & referral requests via email/SMS.
+        </p>
+        <ul class="space-y-3 text-sm text-muted/90">
+          <li>• Brings past customers back</li>
+          <li>• Boosts repeat business</li>
+          <li>• Turns clients into advocates</li>
+        </ul>
+      </div>
+
+      <div class="glass p-10 rounded-2xl fade-in-section">
+        <i data-lucide="settings" class="w-10 h-10 mx-auto mb-6 text-success"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-success">Industry-Specific AI</h3>
+        <p class="text-muted mb-6">
+          Ready-made workflows tailored to your type of business.
+        </p>
+        <ul class="space-y-3 text-sm text-muted/90">
+          <li>• Emergency follow-up (home services)</li>
+          <li>• No-show prevention (salons, vets)</li>
+          <li>• Custom triggers that fit you</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Full Agency Services -->
+  <section id="agency" class="section-padding container mx-auto px-8 bg-black/40">
+    <h2 class="text-4xl md:text-5xl font-heading font-semibold text-center mb-12 text-white">
+      Beyond AI: Full Agency Services
+    </h2>
+    <p class="text-xl text-muted text-center mb-16 max-w-4xl mx-auto">
+      We lead with cutting-edge AI-powered marketing, backed by proven agency expertise. Whether you need a new website, SEO strategy, paid ads, or full-service support, Konectd Solutions delivers it all.
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="globe" class="w-12 h-12 mx-auto mb-6 text-primary icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Websites</h3>
+        <p class="text-muted text-lg">
+          Custom, mobile-first websites that convert visitors into customers — built fast, optimized for speed and SEO.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="search" class="w-12 h-12 mx-auto mb-6 text-primary icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">SEO</h3>
+        <p class="text-muted text-lg">
+          Comprehensive local & organic SEO — keyword research, on-page optimization, backlinks, and ongoing performance tracking.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="megaphone" class="w-12 h-12 mx-auto mb-6 text-primary icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Digital Advertising</h3>
+        <p class="text-muted text-lg">
+          Google Ads, Facebook/Instagram, retargeting, and performance campaigns — targeted, tracked, and optimized for ROI.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="layout" class="w-12 h-12 mx-auto mb-6 text-primary icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Other Agency Services</h3>
+        <p class="text-muted text-lg">
+          Branding, content creation, graphic design, video, email marketing, and full marketing strategy — whatever your business needs to stand out.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="users" class="w-12 h-12 mx-auto mb-6 text-primary icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Strategy & Planning</h3>
+        <p class="text-muted text-lg">
+          Custom marketing plans, competitor analysis, audience research, and long-term growth roadmaps.
+        </p>
+      </div>
+
+      <div class="glass p-10 rounded-2xl text-center fade-in-section">
+        <i data-lucide="bar-chart" class="w-12 h-12 mx-auto mb-6 text-primary icon-hover transition-colors"></i>
+        <h3 class="text-2xl font-heading font-semibold mb-6 text-white">Analytics & Optimization</h3>
+        <p class="text-muted text-lg">
+          Data-driven insights, A/B testing, conversion tracking, and continuous campaign refinement.
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-16">
+      <a href="https://konectd-company-llc.smblogin.com/public/store/2ZRC/default"
+         class="inline-block bg-success text-bgdark px-12 py-5 rounded-xl font-semibold text-xl hover:bg-success/90 transition">
+        Talk to Us About Your Full Needs
+      </a>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Konectd Solutions Portfolio -->
+  <section class="section-padding container mx-auto px-8 bg-black/30">
+    <h2 class="text-4xl md:text-5xl font-heading font-semibold text-center mb-16 text-white">
+      The Full Konectd Solutions Portfolio
+    </h2>
+    <p class="text-xl text-muted text-center mb-16 max-w-4xl mx-auto">
+      Marketing is just one part of how we help businesses thrive. Konectd Solutions offers a complete ecosystem of services — all designed to support small and medium-sized companies like yours.
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+      <a href="https://konectd.solutions" class="block glass p-8 rounded-2xl text-center hover:bg-white/5 transition">
+        <i data-lucide="briefcase" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-xl font-heading font-semibold mb-3 text-white">Advisory & Consulting</h3>
+        <p class="text-sm text-muted">
+          Strategic guidance to scale smarter — from operations to growth planning.
+        </p>
+      </a>
+
+      <a href="https://konectd.solutions" class="block glass p-8 rounded-2xl text-center hover:bg-white/5 transition">
+        <i data-lucide="credit-card" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-xl font-heading font-semibold mb-3 text-white">Payment & Payroll</h3>
+        <p class="text-sm text-muted">
+          Secure, streamlined payments and payroll — save time and reduce errors.
+        </p>
+      </a>
+
+      <a href="https://konectd.solutions" class="block glass p-8 rounded-2xl text-center hover:bg-white/5 transition">
+        <i data-lucide="building" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-xl font-heading font-semibold mb-3 text-white">Real Estate</h3>
+        <p class="text-sm text-muted">
+          Property solutions, leasing support, and investment guidance tailored for business owners.
+        </p>
+      </a>
+
+      <a href="https://konectd.solutions" class="block glass p-8 rounded-2xl text-center hover:bg-white/5 transition">
+        <i data-lucide="landmark" class="w-10 h-10 mx-auto mb-6 text-primary"></i>
+        <h3 class="text-xl font-heading font-semibold mb-3 text-white">Financing</h3>
+        <p class="text-sm text-muted">
+          Access to capital, lines of credit, and funding options to fuel your next step.
+        </p>
+      </a>
+
+      <div class="glass p-8 rounded-2xl text-center border border-success/40 bg-success/5">
+        <i data-lucide="megaphone" class="w-10 h-10 mx-auto mb-6 text-success"></i>
+        <h3 class="text-xl font-heading font-semibold mb-3 text-success">Marketing</h3>
+        <p class="text-sm text-muted">
+          AI-powered customer acquisition, reputation, local SEO, social, and re-engagement — you're here now.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get in Touch – Custom Form Widget -->
+  <section id="contact" class="section-padding container mx-auto px-8 bg-black/40 text-center">
+    <h2 class="text-4xl md:text-5xl font-heading font-semibold mb-12 text-white">
+      Get in Touch
+    </h2>
+    <p class="text-xl text-muted mb-16 max-w-4xl mx-auto">
+      Have questions? Give us a call at <a href="tel:507-111-2222" class="text-primary hover:underline">507-111-2222</a> or fill out the form below. We're here to help.
+    </p>
+    <script
+      id="__custom_form_widget" src="https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js"
+      data="eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjMDAwMDAwIiwiYm9yZGVyUmFkaXVzIjoiNXB4IiwiYm9yZGVyU3R5bGUiOiJzb2xpZCIsImJvcmRlcldpZHRoIjoiMXB4IiwiZm9ybUlkIjoiRm9ybUNvbmZpZ0lELTdlZTdlZjkxLTA5YzktNDk3MC1hY2I1LTI5NTE0MzQxMTAwOCIsInBhZGRpbmciOiIyMHB4IiwicHJpbWFyeUNvbG9yIjoiIzE4NzZEMiIsInByaW1hcnlGb250Q29sb3IiOiIjMDAwMDAwIiwid2lkdGgiOiIxMDAlIn0="
+    ></script>
+    <p class="mt-8 text-lg text-muted">
+      Or email us at <a href="mailto:hello@konectd.solutions" class="text-primary hover:underline">hello@konectd.solutions</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/90 py-20">
+    <div class="container mx-auto px-8">
+      <div class="text-muted text-lg leading-relaxed text-center">
+        Konectd Solutions is your trusted partner for small and medium business growth. We combine intelligent AI tools with full-service agency expertise and strategic support to help you capture opportunities, build trust, and scale sustainably — all from one reliable platform.
+      </div>
+      <p class="text-sm text-muted/70 text-center mt-8">
+        © 2026 Konectd Solutions. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scroll fade-in & icons -->
+  <script>
+    lucide.createIcons();
+    const sections = document.querySelectorAll('.fade-in-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
