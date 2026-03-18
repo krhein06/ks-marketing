@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZG9YV8EMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XZG9YV8EMW');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konectd for Private Equity | Multi-Location AI Marketing Platform</title>
+  <meta
+    name="description"
+    content="Konectd helps private equity firms standardize multi-location reporting and deploy AI marketing tools across portfolio companies while preserving local control."
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bgdark: '#0A192F',
+            primary: '#00BFFF',
+            secondary: '#A337FF',
+            success: '#00FF87',
+            neutral: '#F5F5F5',
+            muted: '#94A3B8',
+            panel: '#0f223d',
+            panel2: '#102846',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          boxShadow: {
+            neon: '0 0 30px rgba(0,191,255,0.14)',
+            panel: '0 18px 60px rgba(0,0,0,0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(0,191,255,0.12), transparent 28%),
+        radial-gradient(circle at top right, rgba(163,55,255,0.12), transparent 24%),
+        linear-gradient(180deg, #081424 0%, #0A192F 100%);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-soft {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .hero-glow {
+      text-shadow:
+        0 0 40px rgba(0, 191, 255, 0.30),
+        0 0 80px rgba(163, 55, 255, 0.18);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #ffffff 0%, #9fe8ff 45%, #b98bff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .metallic-text {
+      background: linear-gradient(90deg, #ffffff 0%, #dbeafe 35%, #94e9ff 70%, #ffffff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(0, 191, 255, 0.28), transparent);
+      margin: 5rem auto;
+      max-width: 80%;
+    }
+
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .pricing-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-card.popular::before {
+      content: "Most Popular";
+      position: absolute;
+      top: 20px;
+      right: -38px;
+      transform: rotate(40deg);
+      background: linear-gradient(90deg, #00BFFF, #A337FF);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 6px 42px;
+      text-transform: uppercase;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.12));
+      -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.12));
+    }
+
+    .number-pill {
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-family: Poppins, sans-serif;
+      background: linear-gradient(135deg, rgba(0,191,255,0.18), rgba(163,55,255,0.18));
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #fff;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+    }
+
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item[open] .faq-plus {
+      transform: rotate(45deg);
+    }
+
+    .btn-glow:hover {
+      box-shadow: 0 0 25px rgba(0,191,255,0.22);
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 768px) {
+      .section-divider {
+        margin: 3.5rem auto;
+      }
+
+      .pricing-card.popular::before {
+        top: 14px;
+        right: -42px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-bgdark text-neutral antialiased" onload="lucide.createIcons(); initPage();">
+  <!-- Top Bar -->
+  <div class="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-md text-gray-300 text-sm border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+      <a href="tel:+15075095368" class="hover:text-white transition flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+        </svg>
+        (507) 509-5368
+      </a>
+      <a href="https://konectd-company-llc.smblogin.com/" class="hover:text-white transition">Sign In</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="fixed top-10 w-full z-40">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+      <div class="glass rounded-2xl px-5 py-4 flex items-center justify-between">
+        <div class="flex flex-col items-start">
+          <div class="text-2xl sm:text-3xl font-bold metallic-text leading-none">
+            Konectd Marketing
+          </div>
+          <div class="flex items-center mt-2">
+            <span class="text-xs sm:text-sm text-gray-400 mr-2">Powered by</span>
+            <img src="ks-konectd-solutions-logo 1.png" alt="Konectd Solutions" class="h-5">
+          </div>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-6 text-sm text-gray-300">
+          <a href="#platform" class="hover:text-white transition">Platform</a>
+          <a href="#control" class="hover:text-white transition">Multi-Location Control</a>
+          <a href="#pricing" class="hover:text-white transition">Pricing</a>
+          <a href="#faq" class="hover:text-white transition">FAQ</a>
+          <a href="#contact" class="inline-flex items-center rounded-full bg-white text-slate-900 px-5 py-2.5 font-semibold hover:bg-slate-100 transition btn-glow">
+            Book a Fit Call
+          </a>
+        </div>
+
+        <a href="#contact" class="lg:hidden inline-flex items-center rounded-full bg-white text-slate-900 px-4 py-2 text-sm font-semibold">
+          Book a Call
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden pt-44 pb-24 sm:pt-48 sm:pb-28">
+    <div class="absolute inset-0 hero-grid pointer-events-none"></div>
+    <div class="absolute top-24 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] bg-primary/10 blur-3xl rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="fade-in-section">
+          <div class="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/8 px-4 py-2 text-sm text-primary font-medium">
+            <i data-lucide="building-2" class="w-4 h-4"></i>
+            Built for private equity firms with multi-location portfolios
+          </div>
+
+          <h1 class="mt-6 font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight hero-glow gradient-text">
+            Centralize control. Deploy AI locally. Scale value across every location.
+          </h1>
+
+          <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl">
+            Konectd is a multi-location reporting platform that helps private equity firms standardize visibility,
+            monitor performance, and roll out AI marketing tools to each local business in the portfolio.
+          </p>
+
+          <p class="mt-4 text-base sm:text-lg text-slate-400 max-w-2xl">
+            Your firm gets one place to oversee activity across locations. Local teams get business-specific AI tools
+            they can actually use to answer leads, improve reviews, strengthen local search, and drive more revenue.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-7 py-4 font-semibold text-base hover:bg-slate-100 transition btn-glow">
+              Book a Fit Call
+            </a>
+            <a href="#pricing" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 text-white px-7 py-4 font-semibold text-base hover:bg-white/10 transition">
+              View Portfolio Pricing
+            </a>
+          </div>
+
+          <div class="mt-8 grid sm:grid-cols-3 gap-4 text-sm">
+            <div class="glass-soft rounded-2xl px-4 py-4">
+              <div class="text-primary font-semibold">Portfolio visibility</div>
+              <div class="text-slate-400 mt-1">See performance across all locations in one login.</div>
+            </div>
+            <div class="glass-soft rounded-2xl px-4 py-4">
+              <div class="text-secondary font-semibold">Local execution</div>
+              <div class="text-slate-400 mt-1">Each location gets AI tools tailored to its business.</div>
+            </div>
+            <div class="glass-soft rounded-2xl px-4 py-4">
+              <div class="text-success font-semibold">Faster rollout</div>
+              <div class="text-slate-400 mt-1">Implement across new acquisitions without reinventing process.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in-section">
+          <div class="glass rounded-3xl p-5 sm:p-6 shadow-panel">
+            <div class="flex items-center justify-between mb-5">
+              <div>
+                <p class="text-sm uppercase tracking-[0.18em] text-primary font-semibold">Portfolio Command View</p>
+                <h2 class="text-2xl font-heading font-bold mt-2">Control at every level</h2>
+              </div>
+              <span class="rounded-full bg-success/15 text-success text-xs font-semibold px-3 py-1 border border-success/20">
+                Live Multi-Location
+              </span>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="rounded-2xl bg-white/5 border border-white/8 p-4">
+                <div class="flex items-center gap-2 text-primary font-semibold">
+                  <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+                  Firm Level
+                </div>
+                <ul class="mt-3 space-y-2 text-sm text-slate-300">
+                  <li>• Roll-up reporting across all brands and locations</li>
+                  <li>• Consistent monitoring from one platform</li>
+                  <li>• Visibility into rollout status and local activity</li>
+                </ul>
+              </div>
+
+              <div class="rounded-2xl bg-white/5 border border-white/8 p-4">
+                <div class="flex items-center gap-2 text-secondary font-semibold">
+                  <i data-lucide="git-branch" class="w-4 h-4"></i>
+                  Regional / Brand View
+                </div>
+                <ul class="mt-3 space-y-2 text-sm text-slate-300">
+                  <li>• Compare performance by brand, region, or operator</li>
+                  <li>• Spot inconsistency before it becomes revenue leakage</li>
+                  <li>• Support portfolio-wide standards with local flexibility</li>
+                </ul>
+              </div>
+
+              <div class="rounded-2xl bg-white/5 border border-white/8 p-4 md:col-span-2">
+                <div class="flex items-center gap-2 text-success font-semibold">
+                  <i data-lucide="map-pinned" class="w-4 h-4"></i>
+                  Local Location View
+                </div>
+                <ul class="mt-3 grid sm:grid-cols-2 gap-2 text-sm text-slate-300">
+                  <li>• AI receptionist and lead handling</li>
+                  <li>• Review response and reputation tools</li>
+                  <li>• Local SEO and listings support</li>
+                  <li>• Re-engagement and follow-up campaigns</li>
+                  <li>• CRM activity and inbox workflows</li>
+                  <li>• Business-specific implementation, not generic AI</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-2xl border border-primary/20 bg-primary/8 p-4">
+              <p class="text-sm text-slate-200">
+                <span class="font-semibold text-white">What buyers care about:</span>
+                you do not have to figure out where AI fits by yourself. Konectd implements the tools, configures them
+                to the business model, and gives each location a practical starting point.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Problem -->
+  <section class="py-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto fade-in-section">
+        <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">The portfolio challenge</p>
+        <h2 class="mt-4 font-heading text-3xl sm:text-4xl font-bold">
+          PE firms know they need AI. Most do not know where to start across multiple locations.
+        </h2>
+        <p class="mt-5 text-slate-400 text-lg">
+          The issue is not interest. The issue is implementation. Portfolio leadership wants consistency and visibility.
+          Local teams need tools that are actually usable in the context of their business.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="fade-in-section glass rounded-3xl p-7">
+          <div class="w-12 h-12 rounded-2xl bg-primary/12 flex items-center justify-center border border-primary/20">
+            <i data-lucide="bar-chart-3" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="mt-5 text-xl font-heading font-semibold">Fragmented reporting</h3>
+          <p class="mt-3 text-slate-400">
+            Different locations market differently, report differently, and often perform differently. Leadership lacks
+            one clean view across the portfolio.
+          </p>
+        </div>
+
+        <div class="fade-in-section glass rounded-3xl p-7">
+          <div class="w-12 h-12 rounded-2xl bg-secondary/12 flex items-center justify-center border border-secondary/20">
+            <i data-lucide="cpu" class="w-6 h-6 text-secondary"></i>
+          </div>
+          <h3 class="mt-5 text-xl font-heading font-semibold">AI without a rollout plan</h3>
+          <p class="mt-3 text-slate-400">
+            Many operators hear they need AI, but do not know which tools matter, how to deploy them, or how to adapt
+            them for each local business model.
+          </p>
+        </div>
+
+        <div class="fade-in-section glass rounded-3xl p-7">
+          <div class="w-12 h-12 rounded-2xl bg-success/12 flex items-center justify-center border border-success/20">
+            <i data-lucide="map" class="w-6 h-6 text-success"></i>
+          </div>
+          <h3 class="mt-5 text-xl font-heading font-semibold">Local inconsistency</h3>
+          <p class="mt-3 text-slate-400">
+            If every location is left on its own, execution becomes uneven. If everything is centralized, adoption slows.
+            The platform has to support both oversight and local action.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- What it actually is -->
+  <section id="platform" class="py-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-start">
+        <div class="fade-in-section">
+          <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">What Konectd actually delivers</p>
+          <h2 class="mt-4 font-heading text-3xl sm:text-4xl font-bold">
+            A multi-location reporting platform that rolls out AI marketing tools to local locations.
+          </h2>
+          <p class="mt-5 text-slate-400 text-lg">
+            This is not generic AI consulting and it is not just another dashboard. Konectd gives portfolio leaders a
+            standardized way to monitor performance while implementing AI-powered marketing workflows at the location level.
+          </p>
+
+          <div class="mt-8 space-y-5">
+            <div class="glass-soft rounded-2xl p-5">
+              <h3 class="text-white font-semibold text-lg">Multi-location platform reporting</h3>
+              <p class="mt-2 text-slate-400">
+                Roll up visibility across all locations, monitor activity in one place, and keep a consistent system for
+                tracking how each business is executing.
+              </p>
+            </div>
+
+            <div class="glass-soft rounded-2xl p-5">
+              <h3 class="text-white font-semibold text-lg">AI marketing tools deployed locally</h3>
+              <p class="mt-2 text-slate-400">
+                Each location gets practical tools that support lead response, review generation, local SEO, follow-up,
+                and customer communication without requiring the team to become AI experts.
+              </p>
+            </div>
+
+            <div class="glass-soft rounded-2xl p-5">
+              <h3 class="text-white font-semibold text-lg">Business-specific implementation</h3>
+              <p class="mt-2 text-slate-400">
+                The tools are customized to the business and its workflow. A plumbing group, medspa platform, or auto
+                service brand should not all be using the same generic setup.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in-section">
+          <div class="glass rounded-3xl p-6">
+            <h3 class="font-heading text-2xl font-bold">Core platform capabilities</h3>
+            <div class="mt-6 space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="number-pill">1</div>
+                <div>
+                  <h4 class="font-semibold text-white">AI Receptionist & Lead Capture</h4>
+                  <p class="text-slate-400 mt-1">Answer calls and messages, capture opportunities, and keep local teams from missing inbound demand.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="number-pill">2</div>
+                <div>
+                  <h4 class="font-semibold text-white">Reputation Management</h4>
+                  <p class="text-slate-400 mt-1">Support review generation and response workflows so local brands improve trust without manual follow-up chaos.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="number-pill">3</div>
+                <div>
+                  <h4 class="font-semibold text-white">Local SEO & Listings Support</h4>
+                  <p class="text-slate-400 mt-1">Strengthen local search visibility and maintain consistent business data across locations.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="number-pill">4</div>
+                <div>
+                  <h4 class="font-semibold text-white">CRM, Inbox & Follow-Up</h4>
+                  <p class="text-slate-400 mt-1">Keep communication organized and automate re-engagement so local teams can convert more of the business they already have.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="number-pill">5</div>
+                <div>
+                  <h4 class="font-semibold text-white">Portfolio-Level Monitoring</h4>
+                  <p class="text-slate-400 mt-1">See implementation, usage, and location activity from one login while still allowing local teams to operate inside the same system.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#pricing" class="mt-8 inline-flex items-center rounded-full bg-primary text-slate-950 px-5 py-3 font-semibold hover:opacity-95 transition">
+              See pricing by location count
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Control section -->
+  <section id="control" class="py-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto fade-in-section">
+        <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Multi-location control</p>
+        <h2 class="mt-4 font-heading text-3xl sm:text-4xl font-bold">
+          Give corporate oversight without taking away local execution.
+        </h2>
+        <p class="mt-5 text-slate-400 text-lg">
+          This matters in PE-backed portfolios. The firm needs consistency and monitoring at all levels, but the local
+          business still has to use the tools day to day.
+        </p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-3 gap-6">
+        <div class="fade-in-section glass rounded-3xl p-7">
+          <div class="text-primary font-heading text-xl font-bold">At the firm level</div>
+          <ul class="mt-5 space-y-3 text-slate-300">
+            <li>• Standardize the platform across the portfolio</li>
+            <li>• Monitor activity from one centralized view</li>
+            <li>• Keep consistency across brands and locations</li>
+            <li>• Add acquisitions into a repeatable operating model</li>
+          </ul>
+        </div>
+
+        <div class="fade-in-section glass rounded-3xl p-7">
+          <div class="text-secondary font-heading text-xl font-bold">At the management level</div>
+          <ul class="mt-5 space-y-3 text-slate-300">
+            <li>• Track performance by region, brand, or operator</li>
+            <li>• Identify where rollout is working and where support is needed</li>
+            <li>• Maintain one system instead of multiple disconnected tools</li>
+            <li>• Support implementation without building internal AI infrastructure</li>
+          </ul>
+        </div>
+
+        <div class="fade-in-section glass rounded-3xl p-7">
+          <div class="text-success font-heading text-xl font-bold">At the local level</div>
+          <ul class="mt-5 space-y-3 text-slate-300">
+            <li>• Use AI tools configured to the local business</li>
+            <li>• Respond faster to leads and customer inquiries</li>
+            <li>• Improve reviews, local search, and follow-up workflows</li>
+            <li>• Operate inside a platform leadership can still monitor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Rollout -->
+  <section class="py-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="fade-in-section">
+          <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">How rollout works</p>
+          <h2 class="mt-4 font-heading text-3xl sm:text-4xl font-bold">
+            A practical starting point for firms that know they need AI but do not know how to use it.
+          </h2>
+          <p class="mt-5 text-slate-400 text-lg">
+            We hear this all the time: “We know AI needs to be in the business, but we do not know where to start.”
+            Konectd solves that by giving you a platform, implementation path, and location-level tools that fit how the
+            business actually operates.
+          </p>
+
+          <div class="mt-8 space-y-5">
+            <div class="flex gap-4">
+              <div class="number-pill">1</div>
+              <div>
+                <h3 class="font-semibold text-white">Assess the operating model</h3>
+                <p class="mt-1 text-slate-400">
+                  We identify where AI marketing tools create the most practical value across the locations you manage.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="number-pill">2</div>
+              <div>
+                <h3 class="font-semibold text-white">Configure tools to the business</h3>
+                <p class="mt-1 text-slate-400">
+                  We tailor implementation to the business type so teams are not handed a generic AI setup that does not fit.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="number-pill">3</div>
+              <div>
+                <h3 class="font-semibold text-white">Roll out location by location</h3>
+                <p class="mt-1 text-slate-400">
+                  Leadership gets platform visibility while local businesses receive the workflows they need to actually use it.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="number-pill">4</div>
+              <div>
+                <h3 class="font-semibold text-white">Monitor and expand</h3>
+                <p class="mt-1 text-slate-400">
+                  Add more locations into the same system as your portfolio grows and acquisitions come online.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in-section">
+          <div class="glass rounded-3xl p-6">
+            <h3 class="font-heading text-2xl font-bold">What makes this different</h3>
+            <div class="mt-6 grid gap-4">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <h4 class="font-semibold text-white">Not AI for AI’s sake</h4>
+                <p class="mt-2 text-slate-400">
+                  The goal is operational adoption and revenue impact, not just adding a buzzword to the stack.
+                </p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <h4 class="font-semibold text-white">Not one-size-fits-all</h4>
+                <p class="mt-2 text-slate-400">
+                  Each implementation is customized to the business, so local teams get tools that actually make sense.
+                </p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <h4 class="font-semibold text-white">Not just a dashboard</h4>
+                <p class="mt-2 text-slate-400">
+                  Reporting is paired with location-level AI marketing execution so leadership can monitor real rollout.
+                </p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <h4 class="font-semibold text-white">Not dependent on internal AI expertise</h4>
+                <p class="mt-2 text-slate-400">
+                  You do not need a full internal team to figure out where AI fits across dozens of locations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto fade-in-section">
+        <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Pricing by location count</p>
+        <h2 class="mt-4 font-heading text-3xl sm:text-4xl font-bold">
+          One platform, consistent functionality, better economics as you scale.
+        </h2>
+        <p class="mt-5 text-slate-400 text-lg">
+          Reporting, permissions, and core platform capabilities remain the same at every tier. As you add more
+          locations, pricing improves and rollout support increases.
+        </p>
+      </div>
+
+      <div class="mt-12 grid xl:grid-cols-4 md:grid-cols-2 gap-6">
+        <div class="fade-in-section glass rounded-3xl p-7 pricing-card">
+          <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Foundation</p>
+          <h3 class="mt-3 font-heading text-2xl font-bold">1–10 Locations</h3>
+          <div class="mt-5 flex items-end gap-2">
+            <span class="text-4xl font-heading font-extrabold">$499</span>
+            <span class="text-slate-400 mb-1">/location/mo</span>
+          </div>
+          <p class="mt-4 text-slate-400">
+            Best for smaller portfolio groups starting a multi-location AI rollout with standardized visibility from day one.
+          </p>
+          <ul class="mt-6 space-y-3 text-slate-300 text-sm">
+            <li>• Multi-location reporting platform</li>
+            <li>• One login across all participating locations</li>
+            <li>• AI receptionist, reputation, local SEO, re-engagement, CRM tools</li>
+            <li>• Same reporting and permissions as every tier</li>
+            <li>• Business-specific implementation approach</li>
+            <li>• Strong starting point for first portfolio rollout</li>
+          </ul>
+          <a href="#contact" class="mt-7 inline-flex w-full justify-center rounded-full border border-white/12 bg-white/6 px-5 py-3 font-semibold hover:bg-white/10 transition">
+            Talk Through Fit
+          </a>
+        </div>
+
+        <div class="fade-in-section glass rounded-3xl p-7 pricing-card popular border border-primary/25">
+          <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Growth</p>
+          <h3 class="mt-3 font-heading text-2xl font-bold">11–25 Locations</h3>
+          <div class="mt-5 flex items-end gap-2">
+            <span class="text-4xl font-heading font-extrabold">$429</span>
+            <span class="text-slate-400 mb-1">/location/mo</span>
+          </div>
+          <p class="mt-4 text-slate-400">
+            Best for firms moving from pilot thinking to a more deliberate portfolio-wide operating model.
+          </p>
+          <ul class="mt-6 space-y-3 text-slate-300 text-sm">
+            <li>• Everything in Foundation</li>
+            <li>• Lower per-location cost</li>
+            <li>• More efficient onboarding across brands or regions</li>
+            <li>• Better fit for repeatable rollout across several operators</li>
+            <li>• Easier expansion as new locations come online</li>
+            <li>• Stronger economics for broader adoption</li>
+          </ul>
+          <a href="#contact" class="mt-7 inline-flex w-full justify-center rounded-full bg-white text-slate-900 px-5 py-3 font-semibold hover:bg-slate-100 transition btn-glow">
+            Book a Fit Call
+          </a>
+        </div>
+
+        <div class="fade-in-section glass rounded-3xl p-7 pricing-card">
+          <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Scale</p>
+          <h3 class="mt-3 font-heading text-2xl font-bold">26–50 Locations</h3>
+          <div class="mt-5 flex items-end gap-2">
+            <span class="text-4xl font-heading font-extrabold">$379</span>
+            <span class="text-slate-400 mb-1">/location/mo</span>
+          </div>
+          <p class="mt-4 text-slate-400">
+            Built for firms standardizing AI marketing infrastructure across a larger footprint with disciplined rollouts.
+          </p>
+          <ul class="mt-6 space-y-3 text-slate-300 text-sm">
+            <li>• Everything in Growth</li>
+            <li>• Better pricing for platform-scale deployment</li>
+            <li>• Smoother rollout across complex location sets</li>
+            <li>• Cleaner path for integrating new acquisitions</li>
+            <li>• More leverage from one consistent operating system</li>
+            <li>• Ideal for platform-wide standardization</li>
+          </ul>
+          <a href="#contact" class="mt-7 inline-flex w-full justify-center rounded-full border border-white/12 bg-white/6 px-5 py-3 font-semibold hover:bg-white/10 transition">
+            Plan Rollout
+          </a>
+        </div>
+
+        <div class="fade-in-section glass rounded-3xl p-7 pricing-card">
+          <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Enterprise</p>
+          <h3 class="mt-3 font-heading text-2xl font-bold">50+ Locations</h3>
+          <div class="mt-5 flex items-end gap-2">
+            <span class="text-3xl font-heading font-extrabold">Custom</span>
+            <span class="text-slate-400 mb-1">quote</span>
+          </div>
+          <p class="mt-4 text-slate-400">
+            For larger portfolios needing a custom commercial structure around rollout volume, acquisition pace, and complexity.
+          </p>
+          <ul class="mt-6 space-y-3 text-slate-300 text-sm">
+            <li>• Everything in Scale</li>
+            <li>• Custom pricing for larger portfolios</li>
+            <li>• Built for high-volume multi-location deployment</li>
+            <li>• Best fit for active acquisition and expansion strategies</li>
+            <li>• Commercial structure aligned to portfolio scale</li>
+            <li>• Purpose-built for enterprise rollout planning</li>
+          </ul>
+          <a href="#contact" class="mt-7 inline-flex w-full justify-center rounded-full border border-primary/20 bg-primary/10 text-primary px-5 py-3 font-semibold hover:bg-primary/15 transition">
+            Request Custom Quote
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12 glass rounded-3xl p-6 fade-in-section">
+        <div class="table-scroll">
+          <table class="w-full min-w-[760px] text-left">
+            <thead>
+              <tr class="border-b border-white/10 text-sm text-slate-400">
+                <th class="py-4 pr-4 font-medium">Included at every tier</th>
+                <th class="py-4 pr-4 font-medium">Foundation</th>
+                <th class="py-4 pr-4 font-medium">Growth</th>
+                <th class="py-4 pr-4 font-medium">Scale</th>
+                <th class="py-4 font-medium">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody class="text-sm text-slate-200">
+              <tr class="border-b border-white/6">
+                <td class="py-4 pr-4">Multi-location reporting platform</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4">Included</td>
+              </tr>
+              <tr class="border-b border-white/6">
+                <td class="py-4 pr-4">Permissions and reporting</td>
+                <td class="py-4 pr-4">Same</td>
+                <td class="py-4 pr-4">Same</td>
+                <td class="py-4 pr-4">Same</td>
+                <td class="py-4">Same</td>
+              </tr>
+              <tr class="border-b border-white/6">
+                <td class="py-4 pr-4">AI receptionist, reputation, SEO, re-engagement, CRM</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4">Included</td>
+              </tr>
+              <tr class="border-b border-white/6">
+                <td class="py-4 pr-4">Business-specific implementation</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4 pr-4">Included</td>
+                <td class="py-4">Included</td>
+              </tr>
+              <tr>
+                <td class="py-4 pr-4">Commercial benefit</td>
+                <td class="py-4 pr-4">Entry rollout</td>
+                <td class="py-4 pr-4">Better economics</td>
+                <td class="py-4 pr-4">Portfolio-scale efficiency</td>
+                <td class="py-4">Custom structure</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ROI -->
+  <section class="py-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto fade-in-section">
+        <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Directional ROI model</p>
+        <h2 class="mt-4 font-heading text-3xl sm:text-4xl font-bold">
+          Estimate upside from better lead response and time savings across locations.
+        </h2>
+        <p class="mt-5 text-slate-400 text-lg">
+          This is a simple directional calculator designed for portfolio planning conversations.
+        </p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-[1.05fr_0.95fr] gap-8 items-start">
+        <div class="fade-in-section glass rounded-3xl p-6 sm:p-8">
+          <h3 class="font-heading text-2xl font-bold">Portfolio ROI Calculator</h3>
+          <div class="mt-6 grid md:grid-cols-2 gap-5">
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="locations">Number of Locations</label>
+              <input id="locations" type="number" min="1" value="15" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="monthlyLeads">Monthly Inbound Leads per Location</label>
+              <input id="monthlyLeads" type="number" min="0" value="120" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="missedLeadPct">Leads Missed or Under-Followed (%)</label>
+              <input id="missedLeadPct" type="number" min="0" max="100" value="20" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="recoveryPct">Recovery Rate with AI (%)</label>
+              <input id="recoveryPct" type="number" min="0" max="100" value="35" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="closeRate">Lead-to-Customer Close Rate (%)</label>
+              <input id="closeRate" type="number" min="0" max="100" value="55" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="avgRevenue">Average Revenue per New Customer ($)</label>
+              <input id="avgRevenue" type="number" min="0" value="400" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="hoursSaved">Hours Saved per Location / Month</label>
+              <input id="hoursSaved" type="number" min="0" value="12" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div>
+              <label class="text-sm text-slate-400 block mb-2" for="hourlyValue">Estimated Labor Value per Hour ($)</label>
+              <input id="hourlyValue" type="number" min="0" value="30" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+            </div>
+
+            <div class="md:col-span-2">
+              <label class="text-sm text-slate-400 block mb-2" for="monthlyCost">Monthly Cost per Location ($)</label>
+              <input id="monthlyCost" type="number" min="0" value="429" class="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-primary">
+              <p class="mt-2 text-xs text-slate-500">This field auto-suggests pricing based on location count, but you can override it.</p>
+            </div>
+          </div>
+
+          <button onclick="calculateROI()" class="mt-6 inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-7 py-4 font-semibold hover:bg-slate-100 transition btn-glow">
+            Calculate ROI
+          </button>
+        </div>
+
+        <div class="fade-in-section">
+          <div id="roiResult" class="glass rounded-3xl p-6 sm:p-8 min-h-[320px] flex flex-col justify-center">
+            <h3 class="font-heading text-2xl font-bold">Estimated portfolio impact</h3>
+            <p class="mt-3 text-slate-400">
+              Enter your assumptions and click <span class="text-white font-medium">Calculate ROI</span> to model recovered opportunities,
+              time savings, estimated incremental value, and payback period.
+            </p>
+
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="rounded-2xl bg-white/5 border border-white/10 p-4">
+                <div class="text-sm text-slate-400">Recovered leads / month</div>
+                <div id="metricRecoveredLeads" class="mt-2 text-3xl font-heading font-bold text-white">—</div>
+              </div>
+              <div class="rounded-2xl bg-white/5 border border-white/10 p-4">
+                <div class="text-sm text-slate-400">New customers / month</div>
+                <div id="metricNewCustomers" class="mt-2 text-3xl font-heading font-bold text-white">—</div>
+              </div>
+              <div class="rounded-2xl bg-white/5 border border-white/10 p-4">
+                <div class="text-sm text-slate-400">Added revenue / month</div>
+                <div id="metricAddedRevenue" class="mt-2 text-3xl font-heading font-bold text-white">—</div>
+              </div>
+              <div class="rounded-2xl bg-white/5 border border-white/10 p-4">
+                <div class="text-sm text-slate-400">Time value saved / month</div>
+                <div id="metricSavedValue" class="mt-2 text-3xl font-heading font-bold text-white">—</div>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-2xl border border-success/20 bg-success/10 p-5">
+              <div class="text-sm text-slate-300">Estimated monthly ROI</div>
+              <div id="metricROI" class="mt-2 text-4xl font-heading font-extrabold text-success">—</div>
+              <p id="metricPayback" class="mt-2 text-sm text-slate-300">Payback period will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-6">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto fade-in-section">
+        <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">FAQ</p>
+        <h2 class="mt-4 font-heading text-3xl sm:text-4xl font-bold">
+          The questions PE firms usually ask first
+        </h2>
+      </div>
+
+      <div class="mt-12 space-y-4">
+        <details class="faq-item fade-in-section glass rounded-3xl p-6" open>
+          <summary class="flex items-center justify-between gap-4">
+            <span class="text-lg font-semibold text-white">Is this a portfolio dashboard or a set of local AI tools?</span>
+            <span class="faq-plus text-primary text-3xl leading-none transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-400">
+            It is both. Konectd is a multi-location reporting platform at the portfolio level and an AI marketing toolset
+            at the local level. Leadership gets visibility and consistency. Local teams get tools they can use inside the same system.
+          </p>
+        </details>
+
+        <details class="faq-item fade-in-section glass rounded-3xl p-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="text-lg font-semibold text-white">What if we know we need AI, but do not know where to start?</span>
+            <span class="faq-plus text-primary text-3xl leading-none transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-400">
+            That is one of the main reasons firms engage Konectd. We help determine where AI marketing tools fit in the
+            business, configure them around how that business operates, and roll them out in a way local teams can actually adopt.
+          </p>
+        </details>
+
+        <details class="faq-item fade-in-section glass rounded-3xl p-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="text-lg font-semibold text-white">Are the tools generic across every business?</span>
+            <span class="faq-plus text-primary text-3xl leading-none transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-400">
+            No. The implementation is customized to the business model. The platform is consistent, but the AI marketing
+            workflows are adapted so each business is using something practical for its market and customer journey.
+          </p>
+        </details>
+
+        <details class="faq-item fade-in-section glass rounded-3xl p-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="text-lg font-semibold text-white">Do reporting and permissions change by pricing tier?</span>
+            <span class="faq-plus text-primary text-3xl leading-none transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-400">
+            No. Reporting, permissions, and core platform functionality stay the same across all tiers. The primary
+            differences are price per location and the commercial fit for larger rollouts.
+          </p>
+        </details>
+
+        <details class="faq-item fade-in-section glass rounded-3xl p-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="text-lg font-semibold text-white">Can we still give local locations control?</span>
+            <span class="faq-plus text-primary text-3xl leading-none transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-400">
+            Yes. That is a core part of the model. Portfolio leadership can monitor consistency and rollout across the
+            platform, while local teams still work inside the tools they need every day.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CTA -->
+  <section id="contact" class="pb-20 pt-6">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="glass rounded-[2rem] p-8 sm:p-10 lg:p-12 text-center fade-in-section">
+        <p class="text-primary font-semibold uppercase tracking-[0.18em] text-sm">Ready to talk through fit?</p>
+        <h2 class="mt-4 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Bring AI into the portfolio with one platform leadership can monitor and local teams can use.
+        </h2>
+        <p class="mt-5 text-slate-400 text-lg max-w-3xl mx-auto">
+          If you are evaluating how to standardize reporting and implement AI marketing tools across multiple locations,
+          let’s map the right rollout structure for your portfolio.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="tel:+15075095368" class="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-7 py-4 font-semibold hover:bg-slate-100 transition btn-glow">
+            Call (507) 509-5368
+          </a>
+          <a href="mailto:hello@konectd.solutions" class="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/6 text-white px-7 py-4 font-semibold hover:bg-white/10 transition">
+            Email hello@konectd.solutions
+          </a>
+        </div>
+
+        <form class="mt-8 grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <input type="text" placeholder="Your Name" class="rounded-2xl bg-white/5 border border-white/10 px-4 py-4 text-white outline-none focus:border-primary">
+          <input type="email" placeholder="Work Email" class="rounded-2xl bg-white/5 border border-white/10 px-4 py-4 text-white outline-none focus:border-primary">
+          <input type="text" placeholder="Portfolio / Firm Name" class="rounded-2xl bg-white/5 border border-white/10 px-4 py-4 text-white outline-none focus:border-primary md:col-span-1">
+          <textarea placeholder="Tell us how many locations you manage and where AI feels unclear today." class="md:col-span-3 rounded-2xl bg-white/5 border border-white/10 px-4 py-4 text-white min-h-[130px] outline-none focus:border-primary"></textarea>
+          <button type="submit" class="md:col-span-3 inline-flex items-center justify-center rounded-full bg-primary text-slate-950 px-7 py-4 font-semibold hover:opacity-95 transition">
+            Request a Portfolio Fit Call
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/8 py-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="text-xl font-bold metallic-text">Konectd Marketing</div>
+        <div class="text-sm text-slate-500 mt-1">Powered by Konectd Solutions</div>
+      </div>
+      <div class="text-sm text-slate-500 text-center md:text-right">
+        Multi-location reporting and AI marketing tools for private equity portfolios.
+      </div>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.apigateway.co/webchat-client..prod/sdk.js"
+    data-widget-id="3d4868c8-fbc4-11f0-b22f-624d8abf8f93"
+    defer
+  ></script>
+
+  <script>
+    function initPage() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.fade-in-section').forEach((section) => {
+        observer.observe(section);
+      });
+
+      const locationsField = document.getElementById('locations');
+      const monthlyCostField = document.getElementById('monthlyCost');
+
+      if (locationsField && monthlyCostField) {
+        locationsField.addEventListener('input', () => {
+          const locations = parseInt(locationsField.value, 10) || 0;
+          monthlyCostField.value = getSuggestedPrice(locations);
+        });
+      }
+    }
+
+    function getSuggestedPrice(locations) {
+      if (locations >= 1 && locations <= 10) return 499;
+      if (locations >= 11 && locations <= 25) return 429;
+      if (locations >= 26 && locations <= 50) return 379;
+      if (locations >= 51) return 0;
+      return 429;
+    }
+
+    function formatCurrency(value) {
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+      }).format(value);
+    }
+
+    function calculateROI() {
+      const locations = parseFloat(document.getElementById('locations').value) || 0;
+      const monthlyLeads = parseFloat(document.getElementById('monthlyLeads').value) || 0;
+      const missedLeadPct = (parseFloat(document.getElementById('missedLeadPct').value) || 0) / 100;
+      const recoveryPct = (parseFloat(document.getElementById('recoveryPct').value) || 0) / 100;
+      const closeRate = (parseFloat(document.getElementById('closeRate').value) || 0) / 100;
+      const avgRevenue = parseFloat(document.getElementById('avgRevenue').value) || 0;
+      const hoursSaved = parseFloat(document.getElementById('hoursSaved').value) || 0;
+      const hourlyValue = parseFloat(document.getElementById('hourlyValue').value) || 0;
+      const monthlyCost = parseFloat(document.getElementById('monthlyCost').value) || 0;
+
+      const totalMissedLeads = locations * monthlyLeads * missedLeadPct;
+      const recoveredLeads = totalMissedLeads * recoveryPct;
+      const newCustomers = recoveredLeads * closeRate;
+      const addedRevenue = newCustomers * avgRevenue;
+      const savedValue = locations * hoursSaved * hourlyValue;
+      const totalValue = addedRevenue + savedValue;
+      const totalPlatformCost = locations * monthlyCost;
+      const netGain = totalValue - totalPlatformCost;
+
+      let roiPct = 0;
+      if (totalPlatformCost > 0) {
+        roiPct = (netGain / totalPlatformCost) * 100;
+      }
+
+      let paybackText = 'Custom quote tier requires a direct conversation for payback modeling.';
+      if (totalValue > 0 && totalPlatformCost > 0) {
+        const paybackMonths = totalPlatformCost / totalValue;
+        paybackText = `Estimated payback period: ${paybackMonths.toFixed(1)} months.`;
+      }
+
+      document.getElementById('metricRecoveredLeads').textContent = recoveredLeads.toFixed(0);
+      document.getElementById('metricNewCustomers').textContent = newCustomers.toFixed(0);
+      document.getElementById('metricAddedRevenue').textContent = formatCurrency(addedRevenue);
+      document.getElementById('metricSavedValue').textContent = formatCurrency(savedValue);
+      document.getElementById('metricROI').textContent = `${roiPct.toFixed(0)}%`;
+      document.getElementById('metricPayback').textContent =
+        `${paybackText} Estimated monthly platform cost: ${formatCurrency(totalPlatformCost)}.`;
+    }
+  </script>
+</body>
+</html>
