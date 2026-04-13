@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Referral Partner Page</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #0f172a;
+      --accent-2: #2563eb;
+      --max-width: 960px;
+      --radius: 18px;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      width: 100%;
+      padding: 32px 20px 60px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 36px 28px;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .logo-wrap {
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: 2.25rem;
+      line-height: 1.15;
+      color: var(--accent);
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.35rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin: 0 0 18px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .note {
+      border-left: 4px solid var(--accent-2);
+      background: #eff6ff;
+      padding: 14px 16px;
+      border-radius: 12px;
+      color: #1e3a8a;
+      margin-top: 18px;
+    }
+
+    .form-shell {
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #cbd5e1;
+      border-radius: 16px;
+      background: #f8fafc;
+      padding: 20px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 860px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 1.85rem;
+      }
+
+      .hero,
+      .card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+      <section class="hero">
+        <div class="logo-wrap">
+          <!-- Replace the src below with your logo path -->
+          <img class="logo" src="/final-logos_hori_blk-ylw.png" alt="Konectd logo" />
+        </div>
+        <h1>Referral Partner Page</h1>
+        <p class="intro">
+          Thank you for your interest in partnering with us. Please share as much information as you can so our team can better understand your opportunity, goals, and how you would like us to support you.
+        </p>
+      </section>
+
+      <section class="content-grid">
+        <div class="card">
+          <h2>What to Include</h2>
+          <p>
+            The more context you provide, the more effectively we can evaluate the opportunity and determine the best next steps.
+          </p>
+          <ul>
+            <li>A brief overview of the opportunity or referral</li>
+            <li>Relevant business details, goals, or current challenges</li>
+            <li>Any important timelines, priorities, or urgency</li>
+            <li>Key contact information and preferred communication method</li>
+            <li>Anything else you believe would help us understand the situation clearly</li>
+          </ul>
+
+          <h2>How We Can Help</h2>
+          <p>
+            Use the form to tell us what you would like us to do with the information you are sharing. Whether you want us to review the opportunity, reach out to a prospect, support a conversation, or recommend next steps, include that directly in your submission.
+          </p>
+
+          <div class="note">
+            Please be as specific as possible. Clear details help us route your submission quickly and respond in the most useful way.
+          </div>
+
+          <div style="margin-top: 22px; padding: 20px; border: 1px solid var(--border); border-radius: 14px; background: #fafafa;">
+            <h2 style="margin-bottom: 10px;">Need Assistance?</h2>
+            <p style="margin-bottom: 10px;">
+              If you would like to talk through the opportunity or need help completing the form, please reach out directly:
+            </p>
+            <p style="margin-bottom: 8px;"><strong>Kevin Hein</strong><br />Partner</p>
+            <p style="margin-bottom: 8px;"><a href="mailto:kevin@konectd.solutions">kevin@konectd.solutions</a></p>
+            <p style="margin-bottom: 16px;"><a href="tel:15072610379">507-261-0379</a></p>
+            <a href="https://meeting.calendarhero.com/meeting/new/62e3041ff1808b0012ab3029/meeting?directory=true" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 18px; background: var(--accent-2); color: #ffffff; text-decoration: none; border-radius: 10px; font-weight: 700;">
+              Schedule a Meeting
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Submit Your Referral</h2>
+          <div class="form-shell" style="display: block; min-height: auto; border: none; background: transparent; padding: 0; text-align: left;">
+            <script
+              id="__custom_form_widget"
+              src="https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js"
+              data="eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZjVmNWY1IiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjY2NjY2NjIiwiYm9yZGVyUmFkaXVzIjoiMTBweCIsImJvcmRlclN0eWxlIjoic29saWQiLCJib3JkZXJXaWR0aCI6IjFweCIsImZvcm1JZCI6IkZvcm1Db25maWdJRC02YzA2M2ViYy01MzdjLTQ4MTQtOTZhMi03MDM3YWFlMDg4MGIiLCJwYWRkaW5nIjoiMjBweCIsInByaW1hcnlDb2xvciI6IiM0YTkwZTIiLCJwcmltYXJ5Rm9udENvbG9yIjoiIzMzMzMzMyIsIndpZHRoIjoiMTAwJSJ9"
+            ></script>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <p class="footer-note">
+        We appreciate the opportunity to review your submission and will follow up based on the information provided.
+      </p>
+    </div>
+  </main>
+</body>
+</html>
